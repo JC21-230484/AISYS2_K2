@@ -1,0 +1,146 @@
+@charset "UTF-8";
+* {
+	margin: 0;
+	padding: 0;
+}
+header {
+	background-color: #336633;
+}
+h1 {
+	color: #ffffff;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+main {
+	width: 800px;
+	margin: 20px auto;
+}
+img{
+	max-width: 190px;
+	max-height: 150px;
+}
+.text{
+	font-size: 20px;
+}
+.buttonArea {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.grid{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	row-gap: 2px;
+	column-gap: 2px;
+}
+.item{
+	border:solid 1px #000000;
+	text-align: left;
+	width: 200px;
+	padding: auto;
+}
+.image{
+	display: flex;
+	justify-content: center;
+}
+.cre-right {
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 15px 1.5em 0;
+  padding: 0 5px;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: bold;
+  background: lightgreen;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.cre-right:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -25px;
+  margin-top: -15px;
+  border: 15px solid transparent;
+  border-left: 15px solid lightgreen;
+  z-index: 0;
+}
+
+@media (max-width: 800px) {
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	header {
+		background-color: #336633;
+	}
+	h1 {
+		color: #ffffff;
+		font-size: 10vw;
+		padding-top: 20px;
+		padding-bottom: 10px;
+		text-align: center;
+	}
+	main {
+		font-size: 3vw;
+		width: 800px;
+		margin: 20px auto;
+	}
+	img{
+		max-width: 190px;
+		max-height: 150px;
+	}
+	.text{
+		font-size: 5vw;
+	}
+	.buttonArea {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.grid{
+		display: grid;
+		grid-template-columns: 1fr;
+		row-gap: 2px;
+		column-gap: 2px;
+	}
+	.item{
+		border:solid 1px #000000;
+		width: 100vw;
+		text-align: left;
+		padding: auto;
+	}
+	.image{
+		display: flex;
+		justify-content:center;
+	}
+	.cre-right {
+	  position: relative;
+	  display: inline-block;
+	  margin: 1.5em 15px 1.5em 0;
+	  padding: 0 5px;
+	  width: 90px;
+	  height: 90px;
+	  line-height: 90px;
+	  text-align: center;
+	  color: #FFF;
+	  font-size: 20px;
+	  font-weight: bold;
+	  background: lightgreen;
+	  border-radius: 50%;
+	  box-sizing: border-box;
+	}
+	.cre-right:before {
+	  content: "";
+	  position: absolute;
+	  top: 50%;
+	  right: -25px;
+	  margin-top: -15px;
+	  border: 15px solid transparent;
+	  border-left: 15px solid lightgreen;
+	  z-index: 0;
+	}
+}
